@@ -8,12 +8,12 @@ btnAction2();
 function btnAction(){
     plusButton.addEventListener("click", function(){
     let inputValue = document.querySelector("#quantity1").value;
-    let quantityNum = parseFloat(inputValue);
+    let quantityNum = parseInt(inputValue);
     newValueP(quantityNum);
     });
     minusButton.addEventListener("click", function () {
         let inputValue = document.querySelector("#quantity1").value;
-        let quantityNum = parseFloat(inputValue);
+        let quantityNum = parseInt(inputValue);
         newValueN(quantityNum);
     });
 }
@@ -21,12 +21,12 @@ function btnAction(){
 function btnAction2() {
     plusButton1.addEventListener("click", function () {
         let inputValue = document.querySelector("#quantity2").value;
-        let quantityNum = parseFloat(inputValue);
+        let quantityNum = parseInt(inputValue);
         newValueP2(quantityNum);
     });
     minusButton1.addEventListener("click", function () {
         let inputValue = document.querySelector("#quantity2").value;
-        let quantityNum = parseFloat(inputValue);
+        let quantityNum = parseInt(inputValue);
         newValueN2(quantityNum);
     });
 }
@@ -37,13 +37,13 @@ function newValueP(quantityNum){
         //price changing +
     let priceNum = 1219;
     let value1 = document.querySelector("#quantity1").value;
-    let valueNum = parseFloat(value1);
+    let valueNum = parseInt(value1);
     let newPrice1 = valueNum * priceNum;
     document.querySelector("#price1").innerText = "" + newPrice1;
     //Total price
     let item1 = newPrice1;
     let phoneCase = document.querySelector("#price2").innerText;
-    let item2 = parseFloat(phoneCase);
+    let item2 = parseInt(phoneCase);
     let totalPrice = item1 + item2;
     document.querySelector("#totalprice").innerText = "" + totalPrice;
     document.querySelector("#totalprice2").innerText = "" + totalPrice;
@@ -61,13 +61,13 @@ function newValueN(quantityNum) {
     //price changing -
     let priceNum = 1219;
     let value1 = document.querySelector("#quantity1").value;
-    let valueNum = parseFloat(value1);
+    let valueNum = parseInt(value1);
     let newPrice2 = valueNum * priceNum;
     document.querySelector("#price1").innerText = "" + newPrice2;
     //Total price
     let item1 = newPrice2;
     let phoneCase = document.querySelector("#price2").innerText;
-    let item2 = parseFloat(phoneCase);
+    let item2 = parseInt(phoneCase);
     let totalPrice = item1 + item2;
     document.querySelector("#totalprice").innerText = "" + totalPrice;
     document.querySelector("#totalprice2").innerText = "" + totalPrice;
@@ -79,13 +79,13 @@ function newValueP2(quantityNum) {
     //price changing2 +
     let priceNum = 59;
     let value1 = document.querySelector("#quantity2").value;
-    let valueNum = parseFloat(value1);
+    let valueNum = parseInt(value1);
     let newPrice3 = valueNum * priceNum;
     document.querySelector("#price2").innerText = "" + newPrice3;
     //Total price
     let item2 = newPrice3;
     let phoneCase = document.querySelector("#price1").innerText;
-    let item1 = parseFloat(phoneCase);
+    let item1 = parseInt(phoneCase);
     let totalPrice = item1 + item2;
     document.querySelector("#totalprice").innerText = "" + totalPrice;
     document.querySelector("#totalprice2").innerText = "" + totalPrice;
@@ -102,13 +102,13 @@ function newValueN2(quantityNum) {
     //price changing2 -
     let priceNum = 59;
     let value1 = document.querySelector("#quantity2").value;
-    let valueNum = parseFloat(value1);
+    let valueNum = parseInt(value1);
     let newPrice4 = valueNum * priceNum;
     document.querySelector("#price2").innerText = "" + newPrice4;
     //Total price
     let item2 = newPrice4;
     let phoneCase = document.querySelector("#price1").innerText;
-    let item1 = parseFloat(phoneCase);
+    let item1 = parseInt(phoneCase);
     let totalPrice = item1 + item2;
     document.querySelector("#totalprice").innerText = "" + totalPrice;
     document.querySelector("#totalprice2").innerText = "" + totalPrice;
